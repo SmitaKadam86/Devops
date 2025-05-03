@@ -1,0 +1,49 @@
+Create website with DevOps Tools 
+
+Step 1 :- Go to any cloud provider GCP 
+Done 
+
+
+Step 2 :- Create Virtual machine
+
+Firoz 
+22
+Ubuntu 
+
+Done ---------
+
+ 
+Step 3 :- install docker 
+				sudo -i
+				apt-get update
+				docker
+				apt install docker.io
+				docker -v
+				
+				docker -v
+Docker version 26.1.3,
+
+done --------
+
+Step 4 :- Download website from https://www.free-css.com/ 
+		             wget 
+	                  apt install unzip
+					  
+					  Done 
+
+Step 5 :- Run the nginx container with downloaded website 
+	
+	docker run
+	-ti       iteractive 
+	-d            deattached 
+	-p 80:80
+	-v /root/technology:/usr/share/nginx/html   Volume 
+	  VM:Container
+	nginx
+
+
+docker run -ti -d -p 80:80 -v /tmp/batch-38/inance-html:/usr/share/nginx/html nginx
+
+
+
+Step 6 :- Go to IP address:80 and verify
