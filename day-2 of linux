@@ -1,0 +1,52 @@
+    1  ssh-keygen
+    2  cd /root/.ssh/id_ed25519
+    3  cd /root/.ssh/id_ed25519/
+    4  cd /root/.ssh/
+    5  ls
+    6  cat id_ed25519.pub
+    7  pwd
+    8  mkdir vikas
+    9  cd vikas/
+   10  ls
+   11  cd ..
+   12  ls
+   13  ls -l
+   14  cat id_ed25519.pub
+   15  cd vikas/
+   16  touch 123
+   17  ls
+   18  cp 123 123copy
+   19  ls
+   20  mv 123copy xyz
+   21  ls
+   22  rm xyz
+   23  ls
+   24  cd /
+   25  ls
+   26  hostname
+   27  hostname -i
+   28  uname -a
+   29  whoami
+   30  w
+   31  date
+   32  ca;
+   33  cal
+   34  apt install cal
+   35  apt-get update
+   36  apt install cal
+   37  top
+   38  df
+   39  df -g
+   40  df -m
+   41  df -h
+   42  free
+   43  free -h
+   44  clear
+   45  free -h
+   46  ping www.google.com
+   47  ping google.com
+   48  apt install ping
+   49  dig www.google.com
+   50  apt install dig
+   51  uname -a
+   52  history
