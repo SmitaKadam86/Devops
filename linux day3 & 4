@@ -1,0 +1,258 @@
+#!bin/bash  vikas 
+mkdir raj
+ls
+pwd
+hostname
+touch firoz
+uptime
+free
+
+chmod +x milind.sh
+ls-l
+
+is this a Shell script ?
+
+majority ? NO 
+
+
+it will work or not ?
+
+
+22.04 lts minimal vs 22.04 lts
+ping 
+dig 
+
+
+
+-rw-r--r--
+
+ps -ef  all Visible 100+ 
+
+now i want to see only  systemd
+
+ps -ef  100+ output
+
+| input of above command 
+
+grep  filter serach 
+
+systemd
+
+ps -ef | grep . 
+
+	
+	|  pipe  -- out of first will be the input of 2nd 
+
+grep   search / par=tte
+
+zip
+
+tar operation  - The Linux “tar” stands for tape archive, which is used by a large number of Linux/Unix system administrators to deal with tape drives backup (compressing + binding)
+
+mkdir myfiles
+cd myfiles
+touch a.txt
+touch b.txt
+touch c.txt
+
+or
+
+;
+
+mkdir myfiles ; touch myfiles/{a.txt,b.txt,c.txt}
+
+---------
+
+
+tar -cvf allfiles.tar myfiles     — Zip/tar all files                     (Create verbose file)
+tar -xvf allfiles.tar                      untar operation                    (extract verbose file)
+
+----------------
+
+root@bhagya:/tmp/vikas# history
+    1  ping www.google.com
+    2  vi milind.sh
+    3  cat milind.sh 
+    4  ./milind.sh
+    5  ls -l
+    6  chmod +x milind.sh
+    7  ls -l
+    8  ./milind.sh
+    9  ls
+   10  cd /
+   11  ls
+   12  uname -a
+   13  top
+   14  uptime
+   15  free h
+   16  free -h
+   17  last
+   18  clear
+   19  last
+   20  w
+   21  who
+   22  ps
+   23  ps -ef
+   24  ps -ef | grep systemd
+   25  ps -ef | grep java
+   26  du
+   27  cd /tmp/
+   28  mkdir vikas
+   29  cd vikas/
+   30  ls
+   31  du
+   32  top
+   33  mkdir myfiles ; touch myfiles/{a.txt,b.txt,c.txt}
+   34  ls
+   35  ls myfiles
+   36  tar -cvf allfiles.tar myfiles
+   37  ls
+   38  tar -xvf allfiles.tar
+   39  history
+   
+   ------------
+   
+   du ?
+   
+   
+   currently 
+   
+vikas4cloud:x:1002:
+devops:x:1003:   group   addgroup dev:
+raj:x:1004:    raj  adduser raj
+
+usermod -a -G group username
+usermod -a -G devops raj
+
+vikas4cloud:x:1002:
+devops:x:1003:raj
+raj:x:1004:
+
+-----
+in your company password chnage ? 
+
+90 day's --   last 7 day's -  0
+
+chage
+
+raj Contarch emply :- 31-12-2030
+
+delgroup devops
+
+
+Relevant files: /etc/passwd (user information)
+, /etc/shadow (encrypted passwords)
+, /etc/group (group information)
+ and /etc/sudoers (configuration for sudo).
+ 
+ 
+ 
+ raj user u have to provide the sudo/ root  access to raj ?
+ 
+ go to vi /etc/sudoers
+ i
+ paste
+ raj ALL=(ALL:ALL) ALL
+ save
+ 
+ linux Admin Work 
+ 
+ Vi Editor 
+ 
+ K8s Admin  10Year's - 60 lpa 
+
+ cluster or Application 
+
+ vs DevOps vs SRE vs Platform eng  (infera )
+ 
+ bash vs shell 
+ 
+ 🔹 MORNING MESSAGE (HYPE + SUSPENSE)
+ 
+ 
+ 
+ 
+ 
+ 
+ ------------------------
+
+
+insert mode 
+
+type 
+
+Esc (command mode from insert mode ) : (ready to take the command ) wq
+
+
+Esc : wq
+
+auth.log 
+
+
+
+
+cat auth.log | grep error*
+
+how to undu in file linux 
+
+esc u 
+
+
+/  
+
+
+u have to enable line no in Vi 
+
+:se nu
+
+esc : wq  save quit
+esc :w   save 
+ese :q!   only quit 
+
+
+-rw-r--r--  full permision to this file
+
+chmod 777 
+755 
+
+chomd +x 
+
+
+tail 200 
+
+head 5 filename
+
+apt-get remove python
+
+
+Restart or check system services:
+      apt-get update
+   
+   apt install nginx 
+   
+   
+   systemctl status nginx
+   systemctl stop nginx
+   systemctl start nginx
+   
+   
+   
+Check for system and kernel issues:
+dmesg | tail 
+strace command_name
+cat /var/log/syslog 
+
+
+cat /var/log/syslog | grep error
+
+
+esc :wq enter 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
