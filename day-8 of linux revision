@@ -1,0 +1,53 @@
+root@saurabh:~# history
+    1  locate *.txt
+    2  apt install plocate
+    3  touch milan.txt
+    4  locate *.txt
+    5  man locate
+    6  plocate milan.txt
+    7  vi abc
+    8  cat abc
+    9  head 2 abc 
+   10  less 2  abc
+   11  qq
+   12  tail 5 abc
+   13  top
+   14  htop
+   15  who
+   16  w
+   17  du
+   18  ifconfig
+   19  apt install net-tools
+   20  ifconfig
+   21  ss
+   22  dig www.google.com
+   23  hostname
+   24  whois flipkart.com
+   25  apt install whois
+   26  whois flipkart.com
+   27  clear
+   28  whois flipkart.com
+   29  ifplugstatus 
+   30  apt install ifplugd
+   31  ifplugstatus 
+   32  ls
+   33  uptime >> raj
+   34  ls
+   35  ls -lrt
+   36  mkdir abhinav
+   37  ls -lrt
+   38  clear
+   39  df
+   40  df -h
+   41  du -ah
+   42  findmnt
+   43  dmesg
+   44  echo "i m learning"
+   45  echo "My name is $(whoami)"
+   46  find /etc > etcfiles.txt
+   47  ls
+   48  find . -name "*.txt"
+   49  find . -name milan.txt
+   50  ls
+   51  ls -l
+   52  history
