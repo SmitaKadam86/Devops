@@ -1,0 +1,184 @@
+var/ginx/www/html
+
+index html 
+
+Volunme
+
+20 lpa
+
+mkdir -p ~/docker-nginx/html
+cd ~/docker-nginx/html
+vi index.html
+
+docker run 
+--name docker-nginx
+ -p 80:80
+ -d
+ -v ~/docker-nginx/html:/usr/share/nginx/html
+ nginx
+ 
+ docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+ 
+ 
+-d 
+
+contaier is running in bg 
+
+unable to dlete 
+beacuate alreday running 
+
+stop 
+
+-f 
+
+
+docker run
+ --name docker-nginx
+ -p 80:80 
+ nginx
+
+VM:Containre
+80:80 
+
+
+mkdir -p ~/docker-nginx/html
+cd ~/docker-nginx/html
+vi index.html
+
+
+
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <title>Docker nginx Tutorial</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello Learning team batch39 with /milan, Gaurav, Anand </h1>
+      <p>This nginx page is brought to you by Docker in front of sri ram arun ravi naveen sabita </p>
+    </div>
+  </body>
+</html>
+ 
+ 
+ docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
+ 
+ 
+ docker run
+ --name docker-nginx
+ -p 80:80
+ -d
+ -v ~/docker-nginx/html:/usr/share/nginx/html
+ nginx
+ 
+ vm:containre
+ 
+ 
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+		<title>Google</title>
+	</head>
+	<body>
+		<header>
+			<a href="https://plus.google.com/u/0/up/follow">+Lara</a>
+			<a href="https://mail.google.com">Gmail</a>
+			<a href="https://www.google.com/imghp?hl=en&tab=wi&ei=Ox1NVMXuJYO3yATCjoFA&ved=0CAQQqi4oAg">Images</a>
+			<img id="products" src="products.png"/>
+			<img id="bell" src="bell.png"/>
+			<img id="share" src="share.png"/>
+			<img id="lara" class="headerpics" src="http://lh3.googleusercontent.com/-zkPWifjxy1M/AAAAAAAAAAI/AAAAAAAAAAA/7pAALFnncq4/s32-c/photo.jpg"/>
+		</header>
+		<div>
+			<img src="https://www.google.com/images/srpr/logo11w.png"/>
+			<form name="google" action="#" method="POST"><br>
+				<input type="search" class="search"><br>
+				<input type="submit" class="button" name="submit" value="Google Search">
+				<input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+			</form>
+		</div>
+		<footer>
+			<a class="leftlinks" href="https://www.google.com/intl/en/ads/?fg=1">Advertising</a>
+			<a class="leftlinks" href="https://www.google.com/services/?fg=1">Business</a>
+			<a class="leftlinks" href="https://www.google.com/intl/en/about/">About</a>
+			<a class="rightlinks" href="https://www.google.com/preferences?hl=en">Settings</a>
+			<a class="rightlinks" href="https://www.google.com/intl/en/policies/?fg=1">Privacy & Terms</a>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+-----------------
+
+
+
+Firewall  : 
+
+Custome Code :-
+
+0000000000000000000000000000000000
+
+
+
+------------
+nginx web serer 
+
+
+
+
+FROM ubuntu
+MAINTAINER clouddevopshub@gmail.com
+RUN apt-get update
+RUN apt-get install nginx -y
+CMD [“echo”,”Image created”]
+
+Default 
+
+ENTRPOINT Expose 80:80
+
+
+
+FROM ubuntu:22.04
+RUN apt-get update && apt install Nginx
+CMD echo "nginx installed"
+
+----------
+5Y in Docker 
+
+FROM nginx
+CMD echo "nginx installed"
+
+
+
+ 
+
+
+-t tag 
+
+docker build -t mynginxbatch39.1 .
+
+
+-------------
+
+vi Dockerfile
+i
+paste
+:wq enter 
+
+cat Dockerfile
+
+docker build -t mynginxbatch39.1 .
+
+
+
+docker tag <image-id of mynginxbatch17 > vikas4cloud/mynginxbatch21:latest
+
+
+docker tag a6acca09fa44 vikas4cloud/mynginxbatch39.1:latest
+
+ENTRYPOINT 
