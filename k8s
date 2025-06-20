@@ -1,0 +1,126 @@
+
+  
+  gcloud container clusters get-credentials rajcluster --zone asia-east1-a --project mar
+  
+   docker run  nginx
+  docker run -p 80:80 nginx
+  
+  Expose 80   Service 
+  
+  kubectl run nginx  --image=nginx:1.16
+  
+  prod
+  kubectl create deployment nginxdeploy --image=nginx   
+  pod created automatically ?
+  nginxdeploy-7fcd5d7d8b-567g7   1/1     Running   0          2m10s
+  
+  kubectl delete po nginxdeploy-7fcd5d7d8b-567g7
+  
+  Same Set of POD 
+  Nginx 
+  
+  NETFIX   
+  
+  DEVA  Data Volume  Persistance volume 
+  
+  deployment same pod 
+  
+  1Lakh's 
+  
+  199  mobile    Raj 
+  399   Tv + Laptop
+  999    HD tv 
+  1999   UHD + 5 more 
+  
+  Satelfulset 
+  
+  
+  kubectl run httpd \
+  --image=httpd \
+  --port=80 \
+  --replicas=5 \
+  --expose
+  
+  
+  
+  kubectl run jenkins  --image=jenkins/jenkins:lts
+  
+  kubectl logs  jenkins     POD name 
+  
+  
+  
+  docker exec -it jenkins bin/bash
+  kubectl exec -it jenkins --  bin/bash
+  
+  How to delete po permantely ?
+  
+  deploy 
+  
+  remove from dploymnet 
+
+
+
+
+COS 
+  
+  Cloud Watch + Alarm + SNS (Topic * Subscription)
+  
+  150 + 25 = 
+  
+  gcloud container clusters get-credentials rajcluster --zone asia-east1-a --project mar
+  
+   docker run  nginx
+  docker run -p 80:80 nginx
+  
+  Expose 80   Service 
+  
+  kubectl run nginx  --image=nginx:1.16
+  
+  prod
+  kubectl create deployment nginxdeploy --image=nginx   
+  pod created automatically ?
+  nginxdeploy-7fcd5d7d8b-567g7   1/1     Running   0          2m10s
+  
+  kubectl delete po nginxdeploy-7fcd5d7d8b-567g7
+  
+  Same Set of POD 
+  Nginx 
+  
+  NETFIX   
+  
+  DEVA  Data Volume  Persistance volume 
+  
+  deployment same pod 
+  
+  1Lakh's 
+  
+  199  mobile    Raj 
+  399   Tv + Laptop
+  999    HD tv 
+  1999   UHD + 5 more 
+  
+  Satelfulset 
+  
+  
+  kubectl run httpd \
+  --image=httpd \
+  --port=80 \
+  --replicas=5 \
+  --expose
+  
+  
+  
+  kubectl run jenkins  --image=jenkins/jenkins:lts
+  
+  kubectl logs  jenkins     POD name 
+  
+  
+  
+  docker exec -it jenkins bin/bash
+  kubectl exec -it jenkins --  bin/bash
+  
+  How to delete po permantely ?
+  
+  deploy 
+  
+  remove from dploymnet 
