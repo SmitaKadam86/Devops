@@ -1,0 +1,190 @@
+#! bin/bash
+echo "helloworld"
+mkdir faisal
+hostname
+date
+
+-------------------
+monitoring 10lpa  - 30LPA 
+
+Coluring , remove extra words 
+
+
+#! /bin/bash
+echo "monitoring statst of this node"
+hostname
+echo "********m
+onitoring statst of this node*********************"
+echo "-----------check the disc space-------------"
+df -h
+echo "check the memory space"
+free -h
+echo "check last reboot of the machine"
+uptime
+echo "check running process"
+ps
+
+
+Execute this script every 1 hr 
+
+Cron 
+
+crontab -l     list
+crontab -e    edit
+
+* * * * * command_to_run
+| | | | |
+| | | | └── Day of week (0 - 7) [Sunday = 0 or 7]
+| | | └──── Month (1 - 12)
+| | └────── Day of month (1 - 31)
+| └──────── Hour (0 - 23)
+└────────── Minute (0 - 59)
+
+* */1 * * * ./root/monit.sh
+
+
+
+
+
+
+
+
+
+
+-------------------
+
+Example 1
+
+#!/bin/bash  
+echo "This is a shell script"  
+ls
+echo "I am done running ls"  
+x='i am milan learnjing shellscripting'  
+echo "$x"
+
+--------
+how to call and command inside the command 
+
+#!/bin/bash 
+echo "Hello there"
+echo "My name is $(whoami)"
+echo "Nice to meet you"
+
+
+-------------------------
+
+bodmas 
+
+#!/bin/bash
+# Add two numeric value
+((A=10/5))
+#Print the result
+echo $A
+
+--------------
+
+
+Example 5 Get User Input from the command line 
+
+
+#!/bin/bash
+echo "Enter Your NAME"
+read name
+echo "Welcome $name to Linux Learning session WITH BATCH-39"
+
+-----------
+
+
+#!/bin/bash
+
+
+file="info"
+
+
+echo "Time and Date:" > $file
+date >> $file
+
+echo "" >> $file
+echo "List of logged-in users:" >> $file
+who >> $file
+
+echo "" >> $file
+echo "Running processes:" >> $file
+ps -e >> $file
+
+------shayam---
+
+#!/bin/bash
+
+# Create or overwrite info file
+info_file="info"
+
+# 1. Current time and date
+echo "==== Current Time and Date ====" > $info_file
+date >> $info_file
+
+# 2. List of logged-in users
+echo -e "\n==== Logged-in Users ====" >> $info_file
+who >> $info_file
+
+# 3. Running processes
+echo -e "\n==== Running Processes ====" >> $info_file
+ps aux >> $info_file
+
+echo -e "\nInfo saved to $info_file"
+
+
+date  > info
+w >> info
+ps >> info
+
+---------
+
+for r 123
+do
+echo"******************** x^x^x **************************"
+ps
+******************** x^x^x **************************
+sleep 30
+done 
+
+
+---------------------------------
+
+
+
+
+echo -e "\e[31;43m***** HOSTNAME INFORMATION *****\e[0m"
+echo ""
+
+echo -e "\e[31;43m***** FILE SYSTEM DISK SPACE USAGE *****\e[0m"
+echo ""
+
+echo -e "\e[31;43m ***** FREE AND USED MEMORY *****\e[0m"
+echo ""
+
+echo -e "\e[31;43m***** SYSTEM UPTIME AND LOAD *****\e[0m"
+echo ""
+
+echo -e "\e[31;43m***** CURRENTLY LOGGED-IN USERS *****\e[0m"
+echo ""
+
+echo -e "\e[31;43m***** TOP 5 MEMORY-CONSUMING PROCESSES *****\e[0m"
+ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6
+echo ""
+echo -e "\e[1;32mDone.\e[0m"
+
+this syste m is monitored 
+ who whoami
+ 
+ 
+ 
+ 
+
+https://github.com/ruanyf/simple-bash-scripts   
+
+https://linuxhint.com/30_bash_script_examples/
+
+https://medium.com/fasal-engineering/project-automation-with-bash-f2edc8f8b7a0
+
+https://www.ubuntupit.com/simple-yet-effective-linux-shell-script-examples/ 
