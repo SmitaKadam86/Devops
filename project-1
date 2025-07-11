@@ -1,0 +1,81 @@
+sudo apt-get update &&  sudo apt install docker.io -y
+
+from jenkins/jenkins:lts-jdk11
+USER root
+RUN apt-get update -qq \
+ && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common
+RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
+RUN add-apt-repository \
+ "deb [arch=amd64] https://download.docker.com/linux/debian \
+ $(lsb_release -cs) \
+ stable"
+RUN apt-get update -qq \
+ && apt-get install docker.io -y
+RUN usermod -aG docker jenkins
+
+
+docker image build -t jenkins-docker .
+
+java jenkins Docker  - Jenserver
+
+
+docker container run -d -p 8080:8080 -v   /var/run/docker.sock:/var/run/docker.sock jenkins-docker
+
+
+go into the Container
+
+cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+docker exec -it edb4ddd09fb7 /bin/bash
+
+
+Jenkin's File ? 
+is text file which define pipeline  stpe and stages in a sCM 
+
+github
+
+A Jenkinsfile is a text file that defines a Jenkins Pipeline code (groovy), treating the pipeline as code (scm)
+
+
+CI automic build    10 Build   - all 10 time need to pusg in Docker hub ?
+
+Good   
+
+we will push ?
+
+
+5f3522b20cdf  need to go to Docker hub 
+
+
+update whaspp 
+
+Play 
+Update 
+
+lattest downlod  (backup)
+old remove 
+new install 
+
+In GCP i told you all allw all port 
+
+node {
+   def dockerImageTag = "devopsexample${env.BUILD_NUMBER}"
+    stage('Deploy deploy command')
+{
+        ssh -i user@89.3.3.3
+		sh "docker images"
+        sh "docker rm -f devopsexample "
+		docker login -u admin -p $vikasdocker
+		read 
+		3rd party tool to save credential's   AWS SEcret manager 
+		Valut   token 
+		
+        sh "docker run --name devopsexample -d -p 2222:2222 vickeyyvickey/myapplication:latest"
+        //-Completion
+        echo "--------------------------------------------------------"
+        echo "View App deployed here: http://server-ip:2222"
+        echo "--------------------------------------------------------"
+    }
+}
+
